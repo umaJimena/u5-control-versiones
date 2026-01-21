@@ -1,0 +1,16 @@
+<<'EOF'
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <title>Contacto</title>
+</head>
+<body>
+  <h1>Contacto</h1>
+  <p>Email: contacto@ejemplo.com</p>
+  <a href="index.html">Volver</a>
+perl -0777 -pe 's#</body>#  <p><a href="contacto.html">Contacto</a></p>\n</body>#' -i index.html
+
+</body>
+</html>
+EOF
